@@ -1,61 +1,62 @@
+--**********************
+--*                    *
+--*                    *
+--*	   ---         *
+--*	--|(0)|---     *
+--*	  |---|        *
+--*	--|(1)|---     *
+--*       |---|        *
+--*	--|(2)|-->     *
+--*	  |---|        *
+--*         .          *
+--          .          *
+--*	               *
+--**********************
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+
 
 library STD;
 use STD.textio.all;
 
 entity IM is
-    generic (
-        N: integer  -- Generic parameter defining the size of the memory (number of instructions)
-    );
-    port (
-        I1: in std_ulogic_vector(31 downto 0);    -- Input for fetching instruction at a specific address
-        O1: out std_ulogic_vector(31 downto 0)     -- Output instruction fetched
-    );
+generic(N: integer);
+port(I1: in std_ulogic_vector(31 downto 0);
+     O1: out std_ulogic_vector(31 downto 0));
 end IM;
 
 architecture IM1 of IM is
-    -- Type definition for memory
-    type MEMORY is array (0 to (N-1)) of std_ulogic_vector(31 downto 0);  -- N*4 byte memory
-    -- Signal declaration for memory
-    signal M1: MEMORY := (others => (others => '0'));  -- Initialize memory with zeros
-    signal D1: std_ulogic_vector(29 downto 0) := (others => '0');  -- Signal to hold PC/4
-    signal R1: std_ulogic_vector(31 downto 0) := (others => '0');  -- Signal to hold fetched instruction
+type MEMORY is array (0 to (N-1)) of std_ulogic_vector(31 downto 0); --N*4 byte memory
+signal M1: MEMORY := (others => (others => '0'));
+signal D1: std_ulogic_vector(29 downto 0) := (others => '0');
+signal R1: std_ulogic_vector(31 downto 0) := (others => '0');
 begin
-    -- Extract PC/4 from input
-    D1 <= I1(31 downto 2);
+	D1 <= I1(31 downto 2); --PC/4	
 
-    -- Process to initialize memory from a text file
-    initmem: process
-        file fp: text;
-        variable ln: line;
-        variable instruction: string(1 to 32);
-        variable i, j: integer := 0;
-        variable ch: character := '0';
-    begin
-        file_open(fp, "instruction.txt", READ_MODE);  -- Open instruction file
-        while not endfile(fp) loop
-            readline(fp, ln);  -- Read a line from the file
-            read(ln, instruction);  -- Read the instruction from the line
-            for j in 1 to 32 loop
-                ch := instruction(j);
-                if(ch = '0') then
-                    M1(i)(32-j) <= '0';  -- Store the instruction in memory
-                else
-                    M1(i)(32-j) <= '1';
-                end if;
-            end loop;
-            i := i+1;
-        end loop;
-        file_close(fp);  -- Close the file
-        wait;
-    end process;
+	M1(0) <=  x"00000000";
+	M1(1) <= x"00000000";
+	M1(2) <= x"00000000";
+	M1(3) <= x"00000000";
+    M1(4) <= x"00000110";
+	M1(5) <= x"00000010"; 
+	M1(6) <= x"00001010"; 
+	M1(7) <= x"00001100";
+    M1(8) <= x"11111100"; 
+	M1(9) <= x"00011001"; 
+	M1(10) <= x"00010001"; 
+	M1(11) <= x"00100001";
+    M1(12) <= x"00110001"; 
+	M1(13) <= x"10101010"; 
+	M1(14) <= x"80037100"; 
+	M1(15) <= x"AA555001";
+	M1(16) <= x"7E430021"; 
+	M1(17) <= x"7E401021";
+	M1(18) <= x"5D5B0001";
 
-    -- Fetch instruction from memory based on PC/4
-    R1 <= M1(to_integer(unsigned(D1))) when to_integer(unsigned(D1)) < (N-1) else
-          std_ulogic_vector(to_signed(-1, 32)) when to_integer(unsigned(D1)) > (N-1);
-
-    -- Output fetched instruction
-    O1 <= R1;
+	R1 <= M1(to_integer(unsigned(D1))) when to_integer(unsigned(D1)) < (N-1) else
+	      std_ulogic_vector(to_signed(-1, 32)) when to_integer(unsigned(D1)) > (N-1);
+	
+	O1 <= R1;
 end IM1;
