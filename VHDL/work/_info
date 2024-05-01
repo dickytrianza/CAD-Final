@@ -1,0 +1,994 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/User/Documents/Single-Cycle-MIPS/MIPS
+Eadder
+Z0 w1714564803
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL
+Z5 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/ADDER.vhd
+Z6 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/ADDER.vhd
+l0
+L16
+VGh@3<BNzJOSaAPL3H5E^L2
+!s100 _@`S2GP09hoZb4:ZzKn?F0
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1714565216
+!i10b 1
+Z9 !s108 1714565216.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/ADDER.vhd|
+Z11 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/ADDER.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Aadd1
+R1
+R2
+R3
+DEx4 work 5 adder 0 22 Gh@3<BNzJOSaAPL3H5E^L2
+l23
+L21
+VLn?A1PmXJEP=XfhLPQek53
+!s100 3P4Pcz571kPH3TOUb;^>]3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ealu
+R0
+R1
+R2
+R3
+R4
+Z14 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/ALU.vhd
+Z15 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/ALU.vhd
+l0
+L31
+V;dVTcD_^4GN_zhI=k[5:i0
+!s100 H^Eaz:<>IG=XCoN0X2;233
+R7
+32
+R8
+!i10b 1
+R9
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/ALU.vhd|
+Z17 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/ALU.vhd|
+!i113 1
+R12
+R13
+Aalu1
+R1
+R2
+R3
+DEx4 work 3 alu 0 22 ;dVTcD_^4GN_zhI=k[5:i0
+l43
+L38
+V8Q<M9][AHjN?1;@4<cf;F0
+!s100 ]zmcQN7e`jf0PBlAoIz>l1
+R7
+32
+R8
+!i10b 1
+R9
+R16
+R17
+!i113 1
+R12
+R13
+Ealuc
+R0
+R1
+R2
+R3
+R4
+Z18 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/ALUC.vhd
+Z19 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/ALUC.vhd
+l0
+L58
+VaQRFB5Qf=0^LNcOPfNMJD1
+!s100 WY]3]]6[R4DK>8WBWBlBe3
+R7
+32
+Z20 !s110 1714565217
+!i10b 1
+R9
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/ALUC.vhd|
+Z22 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/ALUC.vhd|
+!i113 1
+R12
+R13
+Aaluc1
+R1
+R2
+R3
+DEx4 work 4 aluc 0 22 aQRFB5Qf=0^LNcOPfNMJD1
+l69
+L64
+V;@BH`NJm4R79e>EA`SD7O2
+!s100 5[R55eTf<8U;LKEQV9@];3
+R7
+32
+R20
+!i10b 1
+R9
+R21
+R22
+!i113 1
+R12
+R13
+Ecachel1
+R0
+R1
+R2
+R3
+R4
+Z23 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHEL1.vhd
+Z24 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHEL1.vhd
+l0
+L5
+VnROcaZmODP=210ATbfAVN0
+!s100 i12BCOb<4Z7da=OmTBL`B2
+R7
+32
+R20
+!i10b 1
+Z25 !s108 1714565217.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHEL1.vhd|
+Z27 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHEL1.vhd|
+!i113 1
+R12
+R13
+Acachel11
+R1
+R2
+R3
+DEx4 work 7 cachel1 0 22 nROcaZmODP=210ATbfAVN0
+l17
+L12
+V^O=mR4ki<X`I;IomAIgBL2
+!s100 h2@ObMgMMGNZ<2aAY607X1
+R7
+32
+R20
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R12
+R13
+Ecachel2
+R0
+R1
+R2
+R3
+R4
+Z28 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHEL2.vhd
+Z29 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHEL2.vhd
+l0
+L20
+VAM;FMDbXQC>ok^eRnK_b=1
+!s100 Pz>i`=bVSAmej2L=;HfZd1
+R7
+32
+R20
+!i10b 1
+R25
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHEL2.vhd|
+Z31 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHEL2.vhd|
+!i113 1
+R12
+R13
+Acachel21
+R1
+R2
+R3
+DEx4 work 7 cachel2 0 22 AM;FMDbXQC>ok^eRnK_b=1
+l35
+L28
+Vd8:jlkVKPVE6ig[3TAgc10
+!s100 YEG_Wl@dNMXbE>NNK]knT1
+R7
+32
+R20
+!i10b 1
+R25
+R30
+R31
+!i113 1
+R12
+R13
+Ecc
+R0
+R1
+R2
+R3
+R4
+Z32 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHECONTROL.vhd
+Z33 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHECONTROL.vhd
+l0
+L5
+VLh:NXJ9>fY8604;Ydf4UY2
+!s100 ZVjoPkfl1FzUlV:H6GM7k0
+R7
+32
+R20
+!i10b 1
+R25
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHECONTROL.vhd|
+Z35 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHECONTROL.vhd|
+!i113 1
+R12
+R13
+Acc1
+R1
+R2
+R3
+DEx4 work 2 cc 0 22 Lh:NXJ9>fY8604;Ydf4UY2
+l15
+L12
+V_Si9bUCJ?mZAXVi?2g[7K0
+!s100 7GIm_NHaih@QZ^h9S0`b>0
+R7
+32
+R20
+!i10b 1
+R25
+R34
+R35
+!i113 1
+R12
+R13
+Ecfc
+R0
+R1
+R2
+R3
+R4
+Z36 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHEFC.vhd
+Z37 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHEFC.vhd
+l0
+L5
+VlBAUfLZ3J`5OG5?T;AZ>G0
+!s100 4=8XXcWWCC?:Zbm<P4W5_0
+R7
+32
+R20
+!i10b 1
+R25
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHEFC.vhd|
+Z39 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CACHEFC.vhd|
+!i113 1
+R12
+R13
+Acfc1
+R1
+R2
+R3
+DEx4 work 3 cfc 0 22 lBAUfLZ3J`5OG5?T;AZ>G0
+l15
+L12
+Vjk1Ejh?Y2BVniK1CMk8U01
+!s100 AK@e[_;KJXa52zb>OY5e`3
+R7
+32
+R20
+!i10b 1
+R25
+R38
+R39
+!i113 1
+R12
+R13
+Econtrol
+R0
+R1
+R2
+R3
+R4
+Z40 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CONTROL.vhd
+Z41 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CONTROL.vhd
+l0
+L45
+Vd4YeoUUX4@NJMPlz2:<@z0
+!s100 N]Wnid7A>de@iMhNbd`ZZ2
+R7
+32
+R20
+!i10b 1
+R25
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CONTROL.vhd|
+Z43 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/CONTROL.vhd|
+!i113 1
+R12
+R13
+Actrl1
+R1
+R2
+R3
+DEx4 work 7 control 0 22 d4YeoUUX4@NJMPlz2:<@z0
+l56
+L51
+V8ZNfSeJW?d34J3fFZi;bj2
+!s100 5i1Lfzk9LX;6Ao;j=48j30
+R7
+32
+R20
+!i10b 1
+R25
+R42
+R43
+!i113 1
+R12
+R13
+Edm
+R0
+R1
+R2
+R3
+R4
+Z44 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/DM.vhd
+Z45 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/DM.vhd
+l0
+L5
+V2;=8nm`V<c>g;S8C4j_7G0
+!s100 DWz_[ZaIl<LDBBh:<B9hV0
+R7
+32
+R20
+!i10b 1
+R25
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/DM.vhd|
+Z47 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/DM.vhd|
+!i113 1
+R12
+R13
+Adm1
+R1
+R2
+R3
+DEx4 work 2 dm 0 22 2;=8nm`V<c>g;S8C4j_7G0
+l45
+L12
+VZGkkHn>edGoa>YBdbg;4`1
+!s100 `YDLaR9<_FT`CCL7SFPej0
+R7
+32
+R20
+!i10b 1
+R25
+R46
+R47
+!i113 1
+R12
+R13
+Eexmem
+R0
+R1
+R2
+R3
+R4
+Z48 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/EXMEM.vhd
+Z49 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/EXMEM.vhd
+l0
+L17
+Vbm__8>5UTMH4<WBA2D5IY1
+!s100 O`5O:HmNd3GZc62eDE9<m1
+R7
+32
+R20
+!i10b 1
+R25
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/EXMEM.vhd|
+Z51 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/EXMEM.vhd|
+!i113 1
+R12
+R13
+Aexmem1
+R1
+R2
+R3
+DEx4 work 5 exmem 0 22 bm__8>5UTMH4<WBA2D5IY1
+l31
+L27
+V4Ea[OJjbd9BBSPU>2lOJA3
+!s100 =WA273_?Gei_iZ`gCj`BB2
+R7
+32
+R20
+!i10b 1
+R25
+R50
+R51
+!i113 1
+R12
+R13
+Efu
+R0
+R1
+R2
+R3
+R4
+Z52 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/FU.vhd
+Z53 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/FU.vhd
+l0
+L9
+VgWfaGdlXY4o5mU4^cPkj30
+!s100 Z57BfaL=UiBg^PFKj9XW30
+R7
+32
+R20
+!i10b 1
+R25
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/FU.vhd|
+Z55 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/FU.vhd|
+!i113 1
+R12
+R13
+Afu1
+R1
+R2
+R3
+DEx4 work 2 fu 0 22 gWfaGdlXY4o5mU4^cPkj30
+l19
+L15
+V84Oag>kY2S_]BAAh_bV390
+!s100 `e=`ddhmDBAkaW1Y>XK;f0
+R7
+32
+R20
+!i10b 1
+R25
+R54
+R55
+!i113 1
+R12
+R13
+Ehdu
+R0
+R1
+R2
+R3
+R4
+Z56 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/HDU.vhd
+Z57 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/HDU.vhd
+l0
+L5
+VDT^H;B_f3LHgVnbGZfa6Y3
+!s100 KVKnfROOUeBkkd]G:WKOS2
+R7
+32
+R20
+!i10b 1
+R25
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/HDU.vhd|
+Z59 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/HDU.vhd|
+!i113 1
+R12
+R13
+Ahdu1
+R1
+R2
+R3
+DEx4 work 3 hdu 0 22 DT^H;B_f3LHgVnbGZfa6Y3
+l15
+L12
+VmY1DY@D4:@:LR>3A>2nP31
+!s100 k;RnJnR=fPF72=acZZ9@U1
+R7
+32
+R20
+!i10b 1
+R25
+R58
+R59
+!i113 1
+R12
+R13
+Eidex
+R0
+R1
+R2
+R3
+R4
+Z60 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/IDEX.vhd
+Z61 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/IDEX.vhd
+l0
+L19
+VUnja`2`ZEJ;9kETaY>@8U1
+!s100 hiPNa[<F:bngC:88b]ck[1
+R7
+32
+Z62 !s110 1714565218
+!i10b 1
+R25
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/IDEX.vhd|
+Z64 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/IDEX.vhd|
+!i113 1
+R12
+R13
+Aidex1
+R1
+R2
+R3
+DEx4 work 4 idex 0 22 Unja`2`ZEJ;9kETaY>@8U1
+l36
+L31
+VAnP_VQX<GDh2X[Z8lmAOa0
+!s100 liAzbDd;fnolgPE8i`_KE0
+R7
+32
+R62
+!i10b 1
+R25
+R63
+R64
+!i113 1
+R12
+R13
+Eifid
+R0
+R1
+R2
+R3
+R4
+Z65 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/IFID.vhd
+Z66 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/IFID.vhd
+l0
+L9
+Vz_dGT0>[L[Lc3MiiPa>_10
+!s100 Al[zY9@i:Om?mJTNfhZJH2
+R7
+32
+R62
+!i10b 1
+Z67 !s108 1714565218.000000
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/IFID.vhd|
+Z69 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/IFID.vhd|
+!i113 1
+R12
+R13
+Aifid1
+R1
+R2
+R3
+DEx4 work 4 ifid 0 22 z_dGT0>[L[Lc3MiiPa>_10
+l18
+L15
+V12m@Ok?;M>IAPVBQEMQcb2
+!s100 nDOGEgBXC1XT`nGBik`3=2
+R7
+32
+R62
+!i10b 1
+R67
+R68
+R69
+!i113 1
+R12
+R13
+Eim
+R0
+R1
+R2
+R3
+R4
+Z70 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/IM.vhd
+Z71 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/IM.vhd
+l0
+L23
+VP6USVfJ:JZ140OF^=hVaO2
+!s100 5dGS3@6K=_c0;]82[[eOn0
+R7
+32
+R62
+!i10b 1
+R67
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/IM.vhd|
+Z73 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/IM.vhd|
+!i113 1
+R12
+R13
+Aim1
+R1
+R2
+R3
+DEx4 work 2 im 0 22 P6USVfJ:JZ140OF^=hVaO2
+l34
+L29
+V<TVb2Q82RA5@411MP1nzf3
+!s100 Hk96obE]i7e9[IeH0>1fU2
+R7
+32
+R62
+!i10b 1
+R67
+R72
+R73
+!i113 1
+R12
+R13
+Ememwb
+R0
+R1
+R2
+R3
+R4
+Z74 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/MEMWB.vhd
+Z75 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/MEMWB.vhd
+l0
+L13
+VKJcgR4I=3fhCJ:Gi6zHbi2
+!s100 D[6X4UkS92h3=>W<@fnCf2
+R7
+32
+R62
+!i10b 1
+R67
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/MEMWB.vhd|
+Z77 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/MEMWB.vhd|
+!i113 1
+R12
+R13
+Amemwb1
+R1
+R2
+R3
+DEx4 work 5 memwb 0 22 KJcgR4I=3fhCJ:Gi6zHbi2
+l27
+L23
+VF25b<]ON6?B]JQN_[YmIm1
+!s100 `;nVIQHRI2lKDTj4nH;a=3
+R7
+32
+R62
+!i10b 1
+R67
+R76
+R77
+!i113 1
+R12
+R13
+Emux
+R0
+R1
+R2
+R3
+R4
+Z78 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/MUX.vhd
+Z79 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/MUX.vhd
+l0
+L12
+V;nW=F]JbGBJ;KnTI?:7_<2
+!s100 SO2D3UYP6TdRFD7=<ch]10
+R7
+32
+R62
+!i10b 1
+R67
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/MUX.vhd|
+Z81 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/MUX.vhd|
+!i113 1
+R12
+R13
+Amux1
+R1
+R2
+R3
+DEx4 work 3 mux 0 22 ;nW=F]JbGBJ;KnTI?:7_<2
+l25
+L20
+VQzAL]W;LTPcH?UKW?6;K80
+!s100 gzidF[klz5hSd^eZP;94P3
+R7
+32
+R62
+!i10b 1
+R67
+R80
+R81
+!i113 1
+R12
+R13
+Emux3
+R0
+R1
+R2
+R3
+R4
+Z82 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/MUX3.vhd
+Z83 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/MUX3.vhd
+l0
+L13
+Vgk<h_Wkj8URczAEj8YiMN0
+!s100 [T<Sj0e76_7ocCm2o3cAB1
+R7
+32
+R62
+!i10b 1
+R67
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/MUX3.vhd|
+Z85 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/MUX3.vhd|
+!i113 1
+R12
+R13
+Amux1
+R1
+R2
+R3
+DEx4 work 4 mux3 0 22 gk<h_Wkj8URczAEj8YiMN0
+l28
+L22
+VMHza1IU6meT0JI`lm4TjW2
+!s100 `Fb4icNEKDMc_A:m]e6K<1
+R7
+32
+R62
+!i10b 1
+R67
+R84
+R85
+!i113 1
+R12
+R13
+Epc
+R0
+R1
+R2
+R3
+R4
+Z86 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/PC.vhd
+Z87 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/PC.vhd
+l0
+L9
+Vgfi>o0XfklQ=J05[RGJ^V1
+!s100 3AUefCfgl_TTKi8^I?F?=2
+R7
+32
+R62
+!i10b 1
+R67
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/PC.vhd|
+Z89 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/PC.vhd|
+!i113 1
+R12
+R13
+Apc1
+R1
+R2
+R3
+DEx4 work 2 pc 0 22 gfi>o0XfklQ=J05[RGJ^V1
+l18
+L15
+V9=JW0ioNf_zhj<ekC1VG@1
+!s100 G2[g`?=gSf<MXC3<X[T_01
+R7
+32
+R62
+!i10b 1
+R67
+R88
+R89
+!i113 1
+R12
+R13
+Ereg
+R0
+R1
+R2
+R3
+R4
+Z90 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/REGISTERS.vhd
+Z91 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/REGISTERS.vhd
+l0
+L9
+Vmj3;<DL:AGa@:lGi2`[i=0
+!s100 OFZnAHC1QC5a1F5i5BidH1
+R7
+32
+R62
+!i10b 1
+R67
+Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/REGISTERS.vhd|
+Z93 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/REGISTERS.vhd|
+!i113 1
+R12
+R13
+Areg1
+R1
+R2
+R3
+DEx4 work 3 reg 0 22 mj3;<DL:AGa@:lGi2`[i=0
+l23
+L16
+Vn2zz2b71bo9K_z5OROP2W1
+!s100 ^LjT=_g13o8leje7W`9E[2
+R7
+32
+R62
+!i10b 1
+R67
+R92
+R93
+!i113 1
+R12
+R13
+Ese
+R0
+R1
+R2
+R3
+R4
+Z94 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/SE.vhd
+Z95 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/SE.vhd
+l0
+L9
+VhYEjG[8KooC[SJNkdZjUY2
+!s100 UKz0ceAoeAegXbX[9cm:R1
+R7
+32
+R62
+!i10b 1
+R67
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/SE.vhd|
+Z97 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/SE.vhd|
+!i113 1
+R12
+R13
+Ase1
+R1
+R2
+R3
+DEx4 work 2 se 0 22 hYEjG[8KooC[SJNkdZjUY2
+l16
+L14
+VXgdIjI3eF`Q;?T8?P3[eD2
+!s100 DTUAGbAaTh4KUDVkCImI@1
+R7
+32
+R62
+!i10b 1
+R67
+R96
+R97
+!i113 1
+R12
+R13
+Esg
+R0
+R1
+R2
+R3
+R4
+Z98 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/SG.vhd
+Z99 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/SG.vhd
+l0
+L13
+VJeO[h]]2>eDK]D9BE^X_:2
+!s100 cd>UQAoU3]8;A_?mfOk8R2
+R7
+32
+Z100 !s110 1714565219
+!i10b 1
+R67
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/SG.vhd|
+Z102 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/SG.vhd|
+!i113 1
+R12
+R13
+Asg1
+R1
+R2
+R3
+DEx4 work 2 sg 0 22 JeO[h]]2>eDK]D9BE^X_:2
+l21
+L17
+VHA>KX:7N6n7@FaGVH2]VQ2
+!s100 P2Gg016;9eAVjddXeR[k02
+R7
+32
+R100
+!i10b 1
+R67
+R101
+R102
+!i113 1
+R12
+R13
+Esl
+R0
+R1
+R2
+R3
+R4
+Z103 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/SL.vhd
+Z104 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/SL.vhd
+l0
+L11
+V;PUM5=XiC6[P_4fXg]cZ33
+!s100 G>YDCE9RmRk:eA_j6j?UF2
+R7
+32
+R100
+!i10b 1
+Z105 !s108 1714565219.000000
+Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/SL.vhd|
+Z107 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/SL.vhd|
+!i113 1
+R12
+R13
+Asl1
+R1
+R2
+R3
+DEx4 work 2 sl 0 22 ;PUM5=XiC6[P_4fXg]cZ33
+l20
+L17
+Va`DH[YW`Pcmd@nNRT=B@i3
+!s100 J:B`;FcBC95gkjW0QNN=l2
+R7
+32
+R100
+!i10b 1
+R105
+R106
+R107
+!i113 1
+R12
+R13
+Etb
+R0
+R1
+R2
+R3
+R4
+Z108 8C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/TB.vhd
+Z109 FC:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/TB.vhd
+l0
+L5
+V3Gk3nb`>Fie0gc^:a>hP40
+!s100 P:b7UBHg;YN>2DSCon[U80
+R7
+32
+R100
+!i10b 1
+R105
+Z110 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/TB.vhd|
+Z111 !s107 C:/Users/User/Documents/Simple-MIPS-Processor-VHDL/VHDL/TB.vhd|
+!i113 1
+R12
+R13
+Atbmips
+R1
+R2
+R3
+Z112 DEx4 work 2 tb 0 22 3Gk3nb`>Fie0gc^:a>hP40
+l155
+L8
+Z113 V=J7Jf;UJ:Ojg>`XAcakZd2
+Z114 !s100 IUC`Ga>[V^3f[6Ld]7nk>3
+R7
+32
+R100
+!i10b 1
+R105
+R110
+R111
+!i113 1
+R12
+R13
