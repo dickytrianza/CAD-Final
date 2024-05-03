@@ -1,0 +1,131 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+constant N: integer := 32;  -- Number of cache blocks (modify as needed)
+constant B: integer := 32;  -- Block size in bytes (modify as needed)
+
+entity cache is
+    generic (
+        CW_ADDR: integer range 0 to B-1  -- Address offset of critical word within a block
+    );
+    port (
+        clk: in std_logic;
+        reset: in std_logic;
+        -- Memory interface
+        mem_read_addr: in std_logic_vector(31 downto 0);
+        mem_read_data: out std_logic_vector(31 downto 0);
+        mem_write_addr: in std_logic_vector(31 downto 0);
+        mem_write_data: in std_logic_vector(31 downto 0);
+        mem_write_en: in std_logic;
+        -- Cache interface
+        cache_read_addr: in std_logic_vector(31 downto 0);
+        cache_read_data: out std_logic_vector(31 downto 0);
+        cache_read_valid: out std_logic;
+        cache_write_addr: in std_logic_vector(31 downto 0);
+        cache_write_data: in std_logic_vector(31 downto 0);
+        cache_write_en: in std_logic
+    );
+end cache;
+
+architecture Behavioral of cache is
+
+    type cache_block is record(
+        valid: std_logic;
+        tag: std_logic_vector(31 downto 0);
+        data: std_logic_vector(B-1 downto 0)
+    );
+    signal cache_mem: cache_block array (0 to N-1);
+
+    signal read_addr_int: std_logic_vector(31 downto 0);
+    signal write_addr_int: std_logic_vector(31 downto 0);
+    signal hit: std_logic;
+    signal miss: std_logic;
+
+begin
+
+    -- Internal signals for CWF
+    signal critical_word_addr: std_logic_vector(31 downto 0);
+    signal critical_word_valid: std_logic;
+    signal critical_word_data: std_logic_vector(31 downto 0);
+
+    -- Memory interface
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if mem_write_en then
+                cache_mem(to_integer(unsigned(mem_write_addr)))(data) <= mem_write_data;
+            end if;
+        end if;
+    end process;
+
+    mem_read_data <= cache_mem(to_integer(unsigned(mem_read_addr)))(data);
+
+    -- Cache read process
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            read_addr_int <= cache_read_addr;
+            hit <= '0';
+            miss <= '0';
+            critical_word_valid <= '0';
+
+            if reset = '1' then
+                for i in 0 to N-1 loop
+                    cache_mem(i) <= (others => '0');
+                end loop;
+            else
+                if cache_read_en then
+                    hit <= cache_mem(to_integer(unsigned(read_addr_int)))(valid) &
+                           (cache_mem(to_integer(unsigned(read_addr_int)))(tag) = read_addr_int(31 downto B));
+                    miss <= not hit;
+
+                    -- CWF logic: If miss, set critical word address for read
+                    if miss then
+                        critical_word_addr <= read_addr_int & (others => '0');
+                    end if;
+                end if;
+            end if;
+        end if;
+    end process;
+
+    -- Cache write process
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            write_addr_int <= cache_write_addr;
+            if cache_write_en then
+                cache_mem(to_integer(unsigned(write_addr_int))
+(valid) <= '1';
+                cache_mem(to_integer(unsigned(write_addr_int)))(tag) <= write_addr_int(31 downto B);
+                cache_mem(to_integer(unsigned(write_addr_int)))(data) <= cache_write_data;
+            end if;
+        end if;
+    end process;
+
+    -- Critical word fetch (if miss)
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if miss then
+                -- Assuming a simple memory access for critical word fetch (modify as needed)
+                critical_word_data <= mem_read_data;
+                critical_word_valid <= '1';
+            else
+                critical_word_valid <= '0';
+            end if;
+        end if;
+    end process;
+
+    -- Cache output logic
+    cache_read_valid <= hit;
+    if hit then
+        cache_read_data <= cache_mem(to_integer(unsigned(read_addr_int)))(data);
+    elsif critical_word_valid then
+        -- Deliver critical word if miss and CWF fetch successful
+        cache_read_data <= critical_word_data << (read_addr_int(31 downto CW_ADDR) * 32);  -- Align critical word based on offset
+    else
+        cache_read_data <= (others => '0');  -- Default on miss without CWF fetch
+    end if;
+
+end Behavioral;
